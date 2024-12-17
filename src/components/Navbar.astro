@@ -1,12 +1,19 @@
 ---
 import Container from "./Container.astro";
+import { Home } from "lucide-astro";
 ---
 
 <nav>
   <Container class:list={"py-4"}>
     <ul class="flex items-center gap-4">
       <li>
-        <a class="underline" href="/">Home</a>
+        <a
+          class="underline inline-flex items-center gap-2 text-blue-500 hover:text-blue-600"
+          href="/"
+        >
+          <Home size={16} />
+          Home
+        </a>
       </li>
     </ul>
   </Container>

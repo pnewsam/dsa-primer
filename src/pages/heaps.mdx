@@ -4,3 +4,35 @@ layout: "../layouts/Layout.astro"
 ---
 
 # Heaps
+
+A heap is a tree structure that satisfies the **heap property**: each node is always either **less than (min heap)** or **greater than (max heap)** either of its children.
+
+Typically a heap is implemented as an array, where the children of the node at index `i` are at indices `2 * i + 1` and `2 * i + 2`.
+
+```typescript
+class MinHeap {
+  constructor() {
+    this.heap = [];
+  }
+}
+```
+
+## Top K Elements Pattern
+
+Find or manipulate the K largest/smallest elements in a collection.
+
+## Merge K Sorted Pattern
+
+Combine K sorted lists or arrays into a single sorted list.
+
+## Two Heaps Pattern
+
+Use two heaps to track median or balance elements in a stream.
+
+## Sliding Window Median Pattern
+
+Calculate median in a sliding window over a stream of numbers.
+
+## Scheduling Pattern
+
+Manage tasks or intervals using a heap for efficient scheduling.
