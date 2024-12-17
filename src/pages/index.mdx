@@ -1,19 +1,72 @@
 ---
+title: DSA Primer
 layout: "../layouts/Layout.astro"
 ---
 
 # DSA Primer
 
-This aims to be a brief overview of the most essential data structures and algorithms that you need to know for.
+**Data Structures and Algorithms** is an essential subject for software engineers, and there is no shortage of learning materials out there. But it can be overwhelming sifting through it all. This primer is meant to be a brief refresher on some of the most frequently tested patterns in technical interviews. It expands on [this excellent reddit comment](https://www.reddit.com/r/leetcode/comments/1heiw94/ultimate_coding_interview_cheatsheet/) with examples and relevant problems.
 
-## Core Data Structures
+It will in no way replace a proper university course, nor will it suffice to prepare you for a really rigorous interview. You will require more preparation for that. But, if you&apos;re cramming last-minute, it might just give you enough tools so that you don't make a complete fool of yourself when you&apos;re staring at a blank whiteboard.
 
-I believe it's valuable to
+<br />
 
-- Static Arrays
-- Dynamic Arrays
-- Singly Linked Lists
-- Doubly Linked Lists
-- Queues
-- Trees
-- Graphs
+## Table of Contents
+
+[Arrays and Strings](/arrays-and-strings)
+
+- [Two Pointers](/arrays-and-strings#two-pointers): Used for finding pairs or elements that meet specific criteria.
+- [Sliding Window](/arrays-and-strings#sliding-window): Maintains a subset of elements within a larger dataset.
+- [Binary Search](/arrays-and-strings#binary-search): Efficient searching in sorted arrays.
+- [Prefix Sum](/arrays-and-strings#prefix-sum): Precompute cumulative sums for quick range queries.
+
+[Trees](/trees)
+
+- [Depth-First Search (DFS)](/trees#depth-first-search): Preorder, inorder, and postorder traversals.
+- [Breadth-First Search (BFS)](/trees#breadth-first-search): Level-order traversal.
+- [Binary Search Tree (BST) operations](/trees#binary-search-tree-bst-operations): Insertion, deletion, and validation.
+- [Tree construction](/trees#tree-construction): From preorder/inorder or postorder/inorder traversals.
+
+[Hash Tables](/hash-tables)
+
+- [Frequency counting](/hash-tables#frequency-counting): Track occurrences of elements.
+- [Two Sum pattern](/hash-tables#two-sum-pattern): Find pairs with a specific sum.
+- [Anagram detection](/hash-tables#anagram-detection): Compare character frequencies.
+- [Caching](/hash-tables#caching): Store computed results for quick lookup.
+
+[Graphs](/graphs)
+
+- [Depth-First Search (DFS)](/graphs#depth-first-search): Explore paths deeply before backtracking.
+- [Breadth-First Search (BFS)](/graphs#breadth-first-search): Explore nodes level by level.
+- [Topological Sort](/graphs#topological-sort): Order nodes in a directed acyclic graph.
+- [Union Find](/graphs#union-find): Detect cycles and connect components.
+
+[Stacks](/stacks)
+
+- [Parentheses matching](/stacks#parentheses-matching): Validate balanced brackets.
+- [Monotonic stack](/stacks#monotonic-stack): Maintain increasing/decreasing order for next greater/smaller element problems.
+- [Expression evaluation](/stacks#expression-evaluation): Evaluate arithmetic expressions.
+
+[Queues](/queues)
+
+- [BFS implementation](/queues#bfs-implementation): Level-order traversal in graphs and trees.
+- [Task scheduling](/queues#task-scheduling): Manage order of operations.
+- [Sliding window problems](/queues#sliding-window-problems): Maintain a window of elements.
+
+[Heaps](/heaps)
+
+- [Top K Elements Pattern](/heaps#top-k-elements-pattern): Find or manipulate the K largest/smallest elements in a collection.
+- [Merge K Sorted Pattern](/heaps#merge-k-sorted-pattern): Combine K sorted lists or arrays into a single sorted list.
+- [Two Heaps Pattern](/heaps#two-heaps-pattern): Use two heaps to track median or balance elements in a stream.
+- [Sliding Window Median Pattern](/heaps#sliding-window-median-pattern): Calculate median in a sliding window over a stream of numbers.
+- [Scheduling Pattern](/heaps#scheduling-pattern): Manage tasks or intervals using a heap for efficient scheduling.
+
+<br />
+
+## Additional Resources
+
+[Leetcode](https://leetcode.com/) is the standard source for practice problems. If you are new to algorithm practice, the standard recommendation is the [Leetcode 75](https://leetcode.com/studyplan/leetcode-75/) problem set. If you have time, the [Top Interview 150](https://leetcode.com/studyplan/top-interview-150/) is more comprehensive.
+
+[Neetcode](https://neetcode.io/) is in many ways the ideal resource for new learners. Rather than throwing you in the deep end, Navi provides a structured curriculum that exposes you to the core concepts before presenting related problems. He only goes as deep as is necessary for practical application.
+
+If and when you have the time to develop a deeper conceptual understanding, [Teach Yourself CS](https://teachyourselfcs.com/#algorithms) offers excellent advice on how to approach it. And Oz Nova's newer project provides a full course including a section on [algorithms](https://csprimer.com/courses/algorithms/). The content on problem-solving is especially helpful.
