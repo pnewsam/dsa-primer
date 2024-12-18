@@ -5,6 +5,34 @@ layout: "../layouts/Layout.astro"
 
 # Trees
 
+## Overview
+
+A tree is a branching data structure with a root node at the top and child nodes branching off of it. Usually, we are talking about binary trees, where each node has at most two children.
+
+In Leetcode problems, you'll usually see binary trees represented as a list of nodes.
+
+```typescript
+class TreeNode {
+  val: number;
+  left: TreeNode | null;
+  right: TreeNode | null;
+
+  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
+  }
+}
+```
+
+As input, you'll receive the root node.
+
+```typescript
+function traverse(root: TreeNode | null) {
+  // ...
+}
+```
+
 ## Depth-First Search (DFS)
 
 **Problem**: [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
